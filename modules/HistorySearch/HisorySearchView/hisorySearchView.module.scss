@@ -1,0 +1,23 @@
+.searchView {
+  width: 340px;
+  display: flex;
+  flex: 1;
+  padding: 5px;
+  min-height: 200px;
+
+  .historyWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .header {
+      width: 100%;
+
+      .title {
+        font-size: 16px;
+        color: var(--TextPrimaryColor);
+        font-family: SVN-PoppinsMedium;
+      }
+    }
+  }
+}

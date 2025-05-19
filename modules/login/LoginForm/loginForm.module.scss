@@ -1,0 +1,161 @@
+@import '/styles/mixins';
+
+.loginForm {
+  background-color: var(--BgPrimaryColor);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px var(--Shadow);
+
+  @include smMaxBreakPoint {
+    box-shadow: none;
+  }
+
+
+  .formLoginFailed {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #F91C3D;
+    border-radius: 10px;
+    background-color: rgba($color: #F91C3D, $alpha: 0.2);
+    border-left: 4px solid #F91C3D;
+
+    p {
+      font-size: 14px;
+    }
+
+    span {
+      font-family: SVN-PoppinsSemiBold;
+
+      a {
+        text-decoration: none;
+        color: #F91C3D;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .formTitle {
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: SVN-PoppinsBold;
+  }
+
+  .formLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .formSignUpText {
+      width: 100%;
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      p {
+        font-size: 14px;
+        font-family: SVN-PoppinsMedium;
+
+        span {
+          font-size: 14px;
+          font-family: SVN-PoppinsSemiBold;
+          color: var(--PrimaryColor);
+
+          .link {
+            margin-left: 5px;
+            text-decoration: none;
+            color: var(--PrimaryColor);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .formUsername {
+      margin-top: 30px;
+    }
+
+    .formPassword {
+      margin-top: 20px;
+    }
+
+    .formLoginButton {
+      margin-top: 30px;
+
+      &:active {
+        background-color: rgba(12, 142, 255, 0.5);
+      }
+
+      &:disabled {
+        background-color: rgba(12, 142, 255, 0.5);
+      }
+    }
+
+    .formForgotPassword {
+      font-size: 16px;
+      margin-top: 30px;
+      text-decoration: none;
+      color: var(--TextSubColor);
+      font-family: SVN-PoppinsSemiBold;
+      text-decoration: underline;
+      display: flex;
+      width: fit-content;
+
+      &:hover {
+        color: var(--TextPrimaryColor);
+        font-family: SVN-PoppinsRegular;
+      }
+    }
+
+    .signInVia {
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      .stroke {
+        height: 2px;
+        width: 26px;
+        background-color: var(--StrokeLine);
+      }
+
+      .orSignInWith {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+        color: var(--TextSubColor);
+        font-family: SVN-PoppinsMedium;
+      }
+    }
+
+    .loginViaView {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: space-between;
+      width: 100px;
+
+      .viaButton {
+        border: 1px solid var(--BorderColor);
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--BgPrimaryColor);
+        border-radius: 10px;
+      }
+    }
+  }
+}

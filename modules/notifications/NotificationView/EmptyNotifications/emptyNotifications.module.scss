@@ -1,0 +1,25 @@
+.emptyNotifications {
+  height: 200px;
+  display: flex;
+  flex: 1;
+  padding: 0px 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-family: SVN-PoppinsMedium;
+    font-size: 16px;
+    color: var(--TextPrimaryColor);
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-family: SVN-PoppinsRegular;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    color: var(--TextSubColor);
+  }
+}

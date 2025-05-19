@@ -1,0 +1,15 @@
+.storySkeletonItem {
+  width: 100px;
+  height: 180px;
+  margin: 1px;
+  margin-right: 10px;
+  position: relative;
+  background-color: var(--BgPrimaryColor);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.storySkeleton {
+  display: flex;
+  overflow: hidden;
+}

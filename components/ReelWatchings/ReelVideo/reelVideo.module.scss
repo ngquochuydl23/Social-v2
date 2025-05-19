@@ -1,0 +1,58 @@
+.reelVideo {
+  background-color: var(--BgPrimaryColor);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .thumbnail {
+    height: auto;
+    width: auto;
+    aspect-ratio: 9/16;
+
+    &.vertical {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+      aspect-ratio: 9/16;
+    }
+
+    &.horizontal {
+      height: auto;
+      object-fit: contain;
+      width: 100%;
+    }
+
+    position: absolute;
+    z-index: 100px;
+    border-radius: 0px;
+  }
+
+  .blurReel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    aspect-ratio: 9/16;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: none;
+
+    .blurImage {
+      filter: blur(10px);
+      box-shadow: 0px 0px 0px 0px;
+      height: 100%;
+      width: 100%;
+      box-shadow: none;
+    }
+
+    &.isMobile {
+      border-radius: 0px;
+      box-shadow: none;
+    }
+  }
+}

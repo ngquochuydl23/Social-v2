@@ -1,0 +1,148 @@
+.composer {
+  flex-direction: row;
+  background-color: var(--BgPrimaryColor);
+  padding: 10px;
+  align-items: center;
+  display: flex;
+
+
+  .enterComment {
+    display: flex;
+    flex: 1;
+    min-height: auto;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--AuthTextField);
+    flex-direction: row;
+    border-radius: 20px;
+
+    svg path {
+      fill: #bebebe;
+    }
+
+    &.isFocus {
+      flex-direction: column;
+
+      .enterCommentInput {
+
+        margin-right: 0px;
+      }
+    }
+
+    .mediaContain {
+      margin-top: 20px;
+      position: relative;
+      height: 100px;
+      background-color: var(--AuthTextField);
+      width: fit-content;
+      overflow: hidden;
+      display: flex;
+
+      .media {
+        // background-color: var(--BgPrimaryColor);
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+      }
+
+      .loading {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+
+        span {
+          position: absolute;
+          z-index: 2;
+          font-size: 12px;
+          color: #fff;
+          font-family: SVN-PoppinsRegular;
+        }
+      }
+    }
+
+    .mediaMenu {
+      display: flex;
+      width: 100%;
+      margin-top: 10px;
+      flex: 1;
+
+      .mediaWrap {
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        .button {
+          display: flex;
+          margin-right: 10px;
+
+          &:active {
+            border-radius: 20px;
+            background-color: var(--BaseBgHover);
+          }
+        }
+      }
+
+      .sendButton {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.enable {
+          &:active {
+            border-radius: 20px;
+            background-color: var(--BaseBgHover);
+          }
+        }
+      }
+    }
+
+    .enterCommentInput {
+      width: 100%;
+      min-height: 21px;
+      border: none;
+      overflow: hidden;
+      background-color: var(--AuthTextField);
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 24px;
+      line-height: 24px;
+      max-height: 120px;
+      margin-right: 10px;
+      font-family: SVN-PoppinsRegular;
+      font-size: 14px;
+      color: var(--TextPrimaryColor);
+      line-height: 21px;
+      resize: inherit;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      &::-webkit-input-placeholder {
+        font-family: SVN-PoppinsRegular;
+        color: var(--PlaceHolderColor);
+      }
+
+      &:-ms-input-placeholder {
+        font-family: SVN-PoppinsRegular;
+        color: var(--PlaceHolderColor);
+      }
+
+      &::placeholder {
+        font-family: SVN-PoppinsRegular;
+        color: var(--PlaceHolderColor);
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@import 'variables';
+@import 'fonts';
+
+html,
+body,
+#fullheight {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  --AuthTextFieldPlcHolder: rgba(0, 0, 0, 0.7);
+  --AuthTextField: #f5f5f5;
+  --ErrorColor: #F91C3D;
+  --PrimaryColor: #0C8EFF;
+  --OnPrimaryColor: #FFFFFF;
+  --BgPrimaryColor: #FFFFFF;
+  --BgSubColor: #F5F5F5;
+  --TextPrimaryColor: #000000;
+  --TextSubColor: rgba(0, 0, 0, 0.7);
+  --PlaceHolderColor: rgba(0, 0, 0, 0.6);
+  --IconFrameColor: #E5E6EB;
+  --IconFrameShadow: rgba(0, 0, 0, 0.1);
+  --IconFrameHover: rgba(0, 0, 0, 0.15);
+  --IconInactive: #d3d3d3;
+  --IconActive: #0C8EFF;
+  --IconColor: #d3d3d3;
+  --OnIconFrameColor: #1C274C;
+  --SwitchDarkLight: #E5E6EB;
+  --Shadow: rgba(0, 0, 0, 0.25);
+  --BorderColor: #d3d3d3;
+  --DropDownShadow: rgba(0, 0, 0, 0.2);
+  --StrokeLine: rgba(0, 0, 0, 0.25);
+  --AccountDDItemHover: #E5E6EB;
+  --UploadDDItemHover: #E5E6EB;
+  --SideBarHoverAndAcitve: rgba(0, 0, 0, 0.05);
+  --SideBarShadow: rgba(0, 0, 0, 0.2);
+  --StoryArrowFrameColor: rgba(255, 255, 255, 0.7);
+  --IconStoryArrowFrameColor: rgba(0, 0, 0, 0.7);
+  --IconStoryArrowFrameColorHover: #E5E6EB;
+  --UnViewStoryColor: #D3d3d3;
+  --SkeletonColor: #f5f5f5;
+  --ErrorCoverColor: rgba(0, 0, 0, 0.1);
+  --MobileLabelBotNavColor: rgba(0, 0, 0, 0.7);
+  --MobileNavButtonColor: rgba(255, 255, 255, 0.4);
+  --MobileNavButtonActiveColor: rgba(255, 255, 255, 0.1);
+  --CreateStoryBodyColor: #fff;
+  --FeedButtonHoverColor: rgba(0, 0, 0, 0.05);
+  --FollowRequestHoverColor: rgba(0, 0, 0, 0.05);
+  --CropShadow: rgba(255, 255, 255, 0.5);
+  --BaseBgHover: #E5E6EB;
+  --SearchBoxColor: rgba(0, 0, 0, 0.05);
+  --CreateFeedMenuColor: rgba(245, 245, 245, 0.7);
+
+  --CreatingStoryBackdrop: rgba(0, 0, 0, 0.9);
+  --BackdropDiaglog: rgba(0, 0, 0, 0.5);
+  --ScrollBar: rgba(225, 225, 225, 0.9);
+  --PlaceHolder: #F5F5F5;
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--BgPrimaryColor);
+  color: var(--TextPrimaryColor);
+  font-family: SVN-PoppinsRegular;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+[data-theme="dark"] body {
+  --IconColor: #696969;
+  --AuthTextFieldPlcHolder: rgba(255, 255, 255, 0.5);
+  --AuthTextField: #2d2d2d;
+  --ErrorColor: #F91C3D;
+  --PrimaryColor: #0C8EFF;
+  --OnPrimaryColor: #FFFFFF;
+  --BgPrimaryColor: #121212;
+  --BgSubColor: #000000;
+  --TextPrimaryColor: rgba(255, 255, 255, 0.8);
+  --TextSubColor: rgba(255, 255, 255, 0.6);
+  --PlaceHolderColor: rgba(255, 255, 255, 0.6);
+  --IconFrameColor: rgba(255, 255, 255, 0.2);
+  --IconFrameShadow: rgba(255, 255, 255, 0.1);
+  --IconFrameHover: rgba(255, 255, 255, 0.3);
+  --OnIconFrameColor: #D3D3D3;
+  --IconInactive: #696969;
+  --IconActive: #0C8EFF;
+  --SwitchDarkLight: rgba(255, 255, 255, 0.2);
+  --Shadow: #242526;
+  --BorderColor: #696969;
+  --DropDownShadow: rgba(255, 255, 255, 0.15);
+  --StrokeLine: rgba(255, 255, 255, 0.25);
+  --AccountDDItemHover: rgba(255, 255, 255, 0.2);
+  --UploadDDItemHover: rgba(255, 255, 255, 0.2);
+  --SideBarHoverAndAcitve: rgba(255, 255, 255, 0.1);
+  --SideBarShadow: rgba(255, 255, 255, 0.2);
+  --StoryArrowFrameColor: rgba(0, 0, 0, 0.7);
+  --IconStoryArrowFrameColor: #FFFFFF;
+  --IconStoryArrowFrameColorHover: rgba(0, 0, 0, 0.8);
+  --UnViewStoryColor: #696969;
+  --SkeletonColor: rgba(255, 255, 255, 0.1);
+  --ErrorCoverColor: rgba(249, 249, 249, 0.2);
+  --MobileLabelBotNavColor: rgba(255, 255, 255, 0.7);
+  --MobileNavButtonColor: rgba(0, 0, 0, 0.4);
+  --MobileNavButtonActiveColor: rgba(255, 255, 255, 0.05);
+  --CreateStoryBodyColor: rgba(255, 255, 255, 0.05);
+  --FeedButtonHoverColor: rgba(255, 255, 255, 0.05);
+  --FollowRequestHoverColor: rgba(255, 255, 255, 0.05);
+  --CropShadow: rgba(18, 18, 18, 0.5);
+  --BaseBgHover: rgba(255, 255, 255, 0.2);
+  --SearchBoxColor: rgba(255, 255, 255, 0.1);
+  --CreateFeedMenuColor: rgba(0, 0, 0, 0.7);
+
+  --CreatingStoryBackdrop: rgba(0, 0, 0, 0.8);
+  --BackdropDiaglog: rgba(36, 37, 38, 0.8);
+  --ScrollBar: rgba(220, 220, 220, 0.2);
+  --PlaceHolder: #2d2d2d;
+
+  background-color: var(--BgPrimaryColor);
+}
+
+#root {
+  height: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-family: SVN-PoppinsRegular;
+  color: var(--TextPrimaryColor);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--TextSubColor);
+}
+
+input:-webkit-autofill::first-line,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  font-family: SVN-PoppinsMedium !important;
+  -webkit-box-shadow: 0 0 0 30px var(--AuthTextField) inset !important;
+  font-size: 14px;
+  filter: none;
+}

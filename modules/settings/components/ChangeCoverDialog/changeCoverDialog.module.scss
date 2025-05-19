@@ -1,0 +1,98 @@
+.changeCover {
+  background-color: var(--BgPrimaryColor);
+  position: relative;
+  overflow: hidden;
+
+  .body {
+    max-height: 80vh;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    overflow-y: auto;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background-color: var(--BgPrimaryColor);
+    }
+    .cover {
+      align-self: center;
+      width: 100%;
+      position: relative;
+      display: flex;
+      margin: auto;
+      flex: 1;
+      overflow: hidden;
+      border-radius: 15px;
+
+      .cropContaner {
+        width: 100%;
+        color: rgba(255, 255, 255, 0.87);
+      }
+
+      .media {
+        width: 100%;
+      }
+
+      .cropArea {
+        width: 100%;
+        border-radius: 0;
+        aspect-ratio: 1;
+        box-shadow: 0 0 0 9999em;
+        color: var(--CropShadow)
+      }
+    }
+  }
+
+  .captionInput {
+    margin-top: 15px;
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--BgPrimaryColor);
+    font-family: SVN-PoppinsRegular;
+    font-size: 14px;
+    line-height: 21px;
+    resize: inherit;
+    margin-bottom: 10px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.6);
+
+    &:focus {
+      border: none;
+      outline: none;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.6);
+    }
+
+    &::-webkit-input-placeholder {
+      /* Edge */
+      font-family: SVN-PoppinsRegular;
+      color: var(--PlaceHolderColor);
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      font-family: SVN-PoppinsRegular;
+      color: var(--PlaceHolderColor);
+    }
+
+    &::placeholder {
+      font-family: SVN-PoppinsRegular;
+      color: var(--PlaceHolderColor);
+    }
+  }
+
+  .shareFeedTitle {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: SVN-PoppinsMedium;
+    color: var(--TextPrimaryColor);
+  }
+
+  .updateCoverButton {
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}

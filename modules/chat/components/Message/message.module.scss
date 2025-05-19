@@ -1,0 +1,109 @@
+.message {
+  display: flex;
+  padding: 5px;
+  flex: 1;
+  overflow: hidden;
+  width: 50%;
+  .avatar {
+    display: flex;
+    height: 40px;
+    width: 40px;
+  }
+
+  .content {
+    border-radius: 15px;
+    display: flex;
+
+    flex: 1;
+    justify-content: space-between;
+    background-color: var(--BgPrimaryColor);
+
+    p {
+      display: flex;
+      margin: 10px;
+      word-wrap: break-word;
+      line-break: auto;
+      white-space: pre-wrap;
+      font-size: 14px;
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsRegular;
+    }
+
+    span {
+      align-self: flex-end;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      color: var(--TextSubColor);
+      font-size: 12px;
+      font-family: SVN-PoppinsRegular;
+    }
+  }
+
+  .creatorName {
+    font-size: 12px;
+  }
+
+  &.typing {
+    margin-top: 10px;
+
+    .content {
+      width: 76px;
+      justify-content: center;
+      height: 39px;
+    }
+  }
+
+  &.inThreshold {
+    padding-left: 55px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    .creatorName {
+      display: none;
+    }
+  }
+
+  &.owned {
+    justify-content: flex-end;
+    align-self: flex-end;
+
+    .content {
+      display: flex;
+      color: #fff;
+      background-color: var(--PrimaryColor);
+      font-family: SVN-PoppinsRegular;
+
+      p {
+        margin: 10px;
+        color: #fff;
+        font-family: SVN-PoppinsRegular;
+      }
+
+      span {
+        color: #f5f5f5;
+      }
+
+      svg {
+        align-self: flex-end;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.groupOfMessages {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.time {
+  align-self: center;
+  font-size: 14px;
+  color: var(--TextSubColor);
+}

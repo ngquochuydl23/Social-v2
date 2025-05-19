@@ -1,0 +1,54 @@
+@import '/styles/mixins';
+
+.containItem {
+  text-decoration: none;
+  .sideBarItem {
+    flex: 1;
+    height: 45px;
+    display: flex;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 0px;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      width: 34px;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1/1;
+    }
+
+    .sideBarText {
+      display: flex;
+      flex: 1;
+      color: var(--TextSubColor);
+      font-family: SVN-PoppinsMedium;
+      margin-left: 15px;
+    }
+
+    &:hover {
+      background-color: var(--SideBarHoverAndAcitve);
+      border-radius: 15px;
+    }
+
+    &.isActive {
+      background-color: var(--SideBarHoverAndAcitve);
+      border-radius: 15px;
+
+      .sideBarText {
+        color: var(--PrimaryColor);
+      }
+    }
+
+    @include lgMaxBreakPoint  {
+      .sideBarText {
+        display: none;
+      }
+      margin-left: 10px;
+    }
+  }
+}

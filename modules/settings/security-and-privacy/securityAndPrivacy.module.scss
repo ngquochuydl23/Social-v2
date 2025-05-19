@@ -1,0 +1,128 @@
+@import '/styles/mixins';
+
+
+.accordSum {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    height: fit-content;
+    padding-right: 20px;
+    font-family: SVN-PoppinsSemiBold;
+    color: var(--TextPrimaryColor);
+    font-size: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  p {
+    height: fit-content;
+    padding-right: 20px;
+    font-family: SVN-PoppinsRegular;
+    color: var(--TextSubColor);
+    font-size: 13px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+
+
+
+.verification {
+  .status {
+    font-family: SVN-PoppinsMedium;
+    line-height: 30px;
+    color: var(--TextPrimaryColor);
+    font-size: 13px;
+
+    &.unverified {
+      color: var(--ErrorColor);
+    }
+  }
+
+  font-family: SVN-PoppinsRegular;
+  color: var(--TextSubColor);
+  font-size: 13px;
+}
+
+.btn {
+  height: 30px !important;
+  width: fit-content !important;
+  padding: 0px 20px !important;
+  font-size: 12px !important;
+  border-radius: 5px!important;
+}
+
+.contactType {
+  font-family: SVN-PoppinsMedium;
+  color: var(--TextPrimaryColor);
+  font-size: 14px;
+  width: 100%;
+}
+
+.haveVerified {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+
+  .status {
+    >p {
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+      font-size: 0.9rem;
+
+      span {
+        font-family: SVN-PoppinsMedium;
+        color: var(--TextPrimaryColor);
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+.fieldSpacing {
+  margin-top: 50px;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .button {
+    height: 35px;
+    width: fit-content;
+    padding-left: 15px;
+    border-radius: 10px;
+    padding-right: 15px;
+
+    .textButton {
+      font-size: 12px;
+    }
+
+    @include smMaxBreakPoint {
+      height: 35px;
+    }
+  }
+}
+
+.securityMessage {
+  font-family: SVN-PoppinsRegular;
+  color: var(--TextSubColor);
+  font-size: 13.5px;
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+.pageLoading {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  .lottieLoading {
+    height: 50px;
+    width: 50px;
+  }
+}

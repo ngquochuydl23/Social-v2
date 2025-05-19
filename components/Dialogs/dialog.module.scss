@@ -1,0 +1,81 @@
+.baseDialogHeader {
+  display: flex;
+  padding: 15px;
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  align-items: center;
+  
+  .icClose {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    &:active {
+      border-radius: 50px;
+      background-color: var(--BaseBgHover);
+    }
+  }
+
+  .headerTitle {
+    display: flex;
+    flex: 1;
+    color: var(--TextPrimaryColor);
+    align-items: center;
+    font-family: SVN-PoppinsMedium;
+    font-style: normal;
+    font-weight: 700;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .textRightButton {
+    padding: 10px;
+    margin-right: 15px;
+    max-width: 100px;
+    font-family: SVN-PoppinsMedium;
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 1;
+    position: absolute;
+    right: 0%;
+    line-height: 30px;
+    color: var(--PrimaryColor);
+
+    &:active {
+      border-radius: 50px;
+      background-color: var(--BaseBgHover);
+    }
+
+    &.disable {
+      color: var(--TextSubColor);
+    }
+  }
+}
+
+.dialogBody {
+  max-height: 80vh;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+
+  &.isMobile {
+    max-height: fit-content;
+    height: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background-color: var(--BgPrimaryColor);
+  }
+}

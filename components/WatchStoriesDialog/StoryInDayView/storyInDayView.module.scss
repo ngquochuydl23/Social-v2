@@ -1,0 +1,68 @@
+.storyInDayView {
+  display: flex;
+  align-items: center;
+}
+
+.lastThumbnail {
+  width: 300px;
+  aspect-ratio: 9/16;
+  display: flex;
+  background-color: #121212;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  .blurImage {
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    object-fit: cover;
+    backdrop-filter: blur(10px);
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+    overflow: hidden;
+
+    &::after {
+      filter: blur(0px);
+    }
+  }
+
+  .thumbnail {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .onThumbnail {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #cccccc, $alpha: 0.25);
+
+    .avatarContain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 100px;
+      border-radius: 200px;
+
+      .overwriteAvatar {
+        width: 110px;
+        height: 110px;
+        aspect-ratio: 1/1;
+        border: 3px solid var(--PrimaryColor);
+      }
+    }
+  }
+}

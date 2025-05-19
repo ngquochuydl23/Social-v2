@@ -1,0 +1,17 @@
+.featureTab {
+  background-color: var(--BgPrimaryColor);
+  padding: 10px 0 10px 0;
+  display: flex;
+  height: 200px;
+}
+.container {
+  margin: 10px 15px;
+  display: flex;
+  flex-grow: 1;
+  background-color: var(--SideBarHoverAndAcitve);
+  border-radius: 15px;
+}
+
+.text {
+  color: var(--TextPrimaryColor);
+}

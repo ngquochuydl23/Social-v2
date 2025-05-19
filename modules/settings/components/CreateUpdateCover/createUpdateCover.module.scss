@@ -1,0 +1,72 @@
+.createUpdateCover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    aspect-ratio: 3/1;
+    width: 50%;
+    border-radius: 15px;
+  }
+
+  input {
+    display: none;
+  }
+
+  .coverFrame {
+    aspect-ratio: 3/1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--BgSubColor);
+    border-radius: 15px;
+  }
+
+  &.onErrorCover {
+    background-color: var(--ErrorCoverColor);
+  }
+
+  h4 {
+    font-family: SVN-PoppinsSemiBold;
+    color: var(--TextPrimaryColor);
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-family: SVN-PoppinsRegular;
+    font-size: 12.5px;
+    margin-top: 2.5px;
+    color: var(--TextSubColor);
+  }
+
+  .buttonGroup {
+    display: flex;
+    margin-top: 20px;
+
+    .changeCoverButton {
+      height: 30px;
+      padding: 0 20px;
+      width: fit-content;
+      background-color: var(--BgSubColor);
+      border-radius: 5px;
+      font-size: 12px;
+      color: #696969;
+    }
+
+    .removeCoverButton {
+      margin-left: 10px;
+      height: 30px;
+      padding: 0 20px;
+      width: fit-content;
+      background-color: rgba(249, 28, 61, 0.2);
+      border-radius: 5px;
+      font-size: 12px;
+      color: #F91C3D;
+    }
+  }
+}

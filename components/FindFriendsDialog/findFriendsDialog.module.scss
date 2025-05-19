@@ -1,0 +1,72 @@
+.findFriends {
+  background-color: var(--BgPrimaryColor);
+  border-radius: 20px;
+
+  .body {
+    padding: 20px;
+  }
+}
+
+.likeItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .infoCreator {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    flex: 1;
+
+    .info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 15px;
+
+      .fullName {
+        color: var(--TextPrimaryColor);
+        font-size: 15px;
+        font-family: SVN-PoppinsSemiBold;
+      }
+
+      .username {
+        color: var(--TextSubColor);
+        font-size: 14px;
+        margin-top: 2.5px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: SVN-PoppinsRegular;
+      }
+
+      .followers {
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--TextSubColor);
+        font-family: SVN-PoppinsRegular;
+
+        span {
+          color: var(--TextPrimaryColor);
+          font-family: SVN-PoppinsSemiBold;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  height: 30px;
+  width: fit-content;
+  border-radius: 7.5px;
+  padding: 0px 20px;
+  background-color: var(--PrimaryColor);
+  color: #FFF;
+  font-size: 12px;
+  font-family: SVN-PoppinsMedium;
+
+  &:hover {
+    background-color: rgba(12, 142, 255, 0.5);
+  }
+ 
+}

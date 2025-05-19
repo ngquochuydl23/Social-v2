@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--BgPrimaryColor);
+
+  .columnTitle {
+    font-size: 18px;
+  }
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      margin-top: 2px;
+      color: var(--TextSubColor);
+      font-size: 14px;
+      font-weight: 100;
+      font-family: SVN-PoppinsLight;
+
+      &:hover {
+        color: var(--TextPrimaryColor);
+      }
+    }
+  }
+}

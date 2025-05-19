@@ -1,0 +1,12 @@
+
+
+.reels {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .endOfReels {
+    width: 100%;
+    height: 100px;
+  }
+}

@@ -1,0 +1,11 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+
+  .day {
+    font-family: SVN-PoppinsMedium;
+    font-size: 16px;
+    color: var(--TextPrimaryColor);
+    margin-bottom: 7px;
+  }
+}

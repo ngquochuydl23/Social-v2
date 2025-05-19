@@ -1,0 +1,86 @@
+.detailDeviceView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .icFrame {
+    aspect-ratio: 1;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--BgSubColor);
+  }
+
+  .deviceName {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--TextPrimaryColor);
+    font-family: SVN-PoppinsSemiBold;
+  }
+
+  .appNameAndVersion {
+    margin-top: 10px;
+    color: var(--TextSubColor);
+    font-size: 14px;
+    font-family: SVN-PoppinsRegular;
+  }
+
+  .attrNotiSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .attrName {
+      margin-left: 15px;
+      display: flex;
+      flex: 1;
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsMedium;
+      font-size: 15px;
+      text-align: start;
+    }
+
+  }
+
+  .attrSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .attrName {
+      margin-left: 15px;
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsMedium;
+      font-size: 15px;
+      text-align: start;
+    }
+
+    .attrValue {
+      font-family: SVN-PoppinsMedium;
+      color: var(--TextPrimaryColor);
+      font-size: 15px;
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+    }
+  }
+
+  .terminateButton {
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 10px;
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+}

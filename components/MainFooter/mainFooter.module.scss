@@ -1,0 +1,32 @@
+.mainFooter {
+  width: 100%;
+  margin-top: 15px;
+
+
+  span {
+    color: var(--TextSubColor);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: SVN-PoppinsRegular;
+
+
+    a {
+      color: var(--TextSubColor);
+      text-decoration: none;
+      font-family: SVN-PoppinsRegular;
+
+      &:hover {
+        text-decoration: underline
+      }
+    }
+  }
+
+  .footerLower {
+    margin-top: 10px;
+    font-family: SVN-PoppinsRegular;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--TextPrimaryColor);
+  }
+}

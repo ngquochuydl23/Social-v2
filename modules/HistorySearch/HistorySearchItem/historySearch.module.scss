@@ -1,0 +1,82 @@
+.historySearchItem {
+  width: 100%;
+  margin-top: 5px;
+
+  .user {
+    display: flex;
+    flex: 1;
+    padding: 5px 5px;
+
+    .avatar {
+      height: 50x;
+      width: 50x;
+    }
+
+    .right {
+      height: 50px;
+      justify-content: center;
+      flex: 1;
+      display: flex;
+      margin-left: 10px;
+      flex-direction: column;
+
+      .fullName {
+        font-size: 14px;
+        color: var(--TextPrimaryColor);
+        font-family: SVN-PoppinsMedium;
+      }
+
+      .userName {
+        font-size: 13px;
+        font-family: SVN-PoppinsRegular;
+        color: var(--TextSubColor);
+      }
+    }
+
+    &:hover {
+      background-color: var(--BaseBgHover);
+      border-radius: 10px;
+    }
+  }
+
+  .hashtag {
+    display: flex;
+    flex: 1;
+    padding: 5px 5px;
+
+    .icFrame {
+      height: 50x;
+      width: 50x;
+
+      &:hover{
+        background-color: rgba($color: #FFF, $alpha: 0.0);
+      }
+    }
+
+    .right {
+      height: 50px;
+      justify-content: center;
+      flex: 1;
+      display: flex;
+      margin-left: 10px;
+      flex-direction: column;
+
+      .hashtagTitle {
+        font-size: 14px;
+        color: var(--TextPrimaryColor);
+        font-family: SVN-PoppinsMedium;
+      }
+
+      .resultCount {
+        font-size: 13px;
+        font-family: SVN-PoppinsRegular;
+        color: var(--TextSubColor);
+      }
+    }
+
+    &:hover {
+      background-color: var(--BaseBgHover);
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,215 @@
+@import '/styles/mixins';
+
+.profileInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  .avatarAndFullName {
+    margin-top: -60px;
+    padding-left: 30px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .avatarContain {
+      background-color: var(--BgPrimaryColor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      border-radius: 200px;
+
+      .overwriteAvatar {
+        width: 190px;
+        height: 190px;
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .rightInfo {
+      margin-left: 20px;
+      margin-top: 80px;
+      padding-right: 10px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      flex: 1;
+      overflow: hidden;
+
+      .fullname {
+        font-family: SVN-PoppinsBold;
+        font-size: 30px;
+        width: inherit;
+        line-height: 32px;
+        word-wrap: break-word;
+        color: var(--TextPrimaryColor);
+      }
+
+      .userName {
+        font-family: SVN-PoppinsRegular;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 7.5px;
+        line-height: 17px;
+        letter-spacing: -0.02em;
+        color: var(--TextPrimaryColor);
+      }
+
+      .followContain {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+
+        p {
+          font-family: SVN-PoppinsRegular;
+          font-weight: 400;
+          font-size: 15px;
+          margin-right: 20px;
+          display: flex;
+          letter-spacing: -0.02em;
+          color: var(--TextSubColor);
+
+          span {
+            font-family: SVN-PoppinsMedium;
+            margin-right: 10px;
+            color: var(--TextPrimaryColor);
+          }
+        }
+      }
+    }
+  }
+
+  @include smMaxBreakPoint {
+    .avatarAndFullName {
+      margin-top: -30px;
+      padding-left: 10px;
+
+      .avatarContain {
+        background-color: var(--BgPrimaryColor);
+        height: 130px;
+        width: 130px;
+
+        .overwriteAvatar {
+          width: 120px;
+          height: 120px;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      .rightInfo {
+        margin-left: 10px;
+        margin-top: 40px;
+
+        .fullname {
+          font-family: SVN-PoppinsBold;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          color: var(--TextPrimaryColor);
+          word-wrap: break-word;
+        }
+
+        .userName {
+          font-family: SVN-PoppinsRegular;
+          font-weight: 500;
+          font-size: 14px;
+          margin-top: 5px;
+          line-height: 17px;
+          letter-spacing: -0.02em;
+          word-break: break-all;
+          color: var(--TextPrimaryColor);
+        }
+
+        .followContain {
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+
+          p {
+            font-family: SVN-PoppinsRegular;
+            font-weight: 400;
+            font-size: 15px;
+            display: flex;
+            letter-spacing: -0.02em;
+            color: var(--TextSubColor);
+
+            span {
+              font-family: SVN-PoppinsMedium;
+              margin-right: 5px;
+              color: var(--TextPrimaryColor);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bio {
+    margin-top: 15px;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    color: var(--TextPrimaryColor);
+    font-family: SVN-PoppinsRegular;
+
+    @include smMaxBreakPoint {
+      width: 60%;
+      margin-left: 15px;
+    }
+  }
+
+  .buttons {
+    margin-top: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    height: 40px;
+    margin-bottom: 10px;
+
+    @include lgMaxBreakPoint {
+      width: 40%;
+    }
+
+    @include mdMaxBreakPoint {
+      width: 60%;
+    }
+
+    @include smMaxBreakPoint {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .editProfileButton {
+        .text {
+          padding: 0px;
+        }
+      }
+    }
+
+    .editProfileButton {
+      height: 100%;
+      margin-left: 5px;
+
+      .text {
+        font-size: 14px;
+        color: var(--TextSubColor);
+        font-family: SVN-PoppinsMedium;
+      }
+    }
+
+    .addStories {
+      height: 100%;
+      margin-right: 5px;
+
+      .text {
+        font-size: 14px;
+        font-family: SVN-PoppinsMedium;
+      }
+    }
+  }
+}

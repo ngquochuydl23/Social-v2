@@ -1,0 +1,177 @@
+@import "/styles/mixins";
+
+.profileLayout {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  background-color: var(--BgPrimaryColor);
+
+  .profile {
+    background-color: var(--BgPrimaryColor);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1px;
+    box-shadow: 0px 2px 2px var(--Shadow);
+
+    .container {
+      flex: 1;
+      position: relative;
+      flex-grow: 1;
+      display: "flex";
+      flex-direction: "column";
+
+      @include smMaxBreakPoint {
+        max-width: 600px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .subPageContain {
+    background-color: var(--BgSubColor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+
+    .overwriteContainer {
+      flex: 1;
+      display: "flex";
+      flex-direction: "row";
+
+      .insideContainer {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: "row";
+
+        .wrap {
+          flex: 1;
+          display: "flex";
+          flex-direction: "column";
+        }
+
+        .rightSidebar {
+          width: 40%;
+          position: sticky;
+          top: 0%;
+          height: fit-content;
+          margin: 10px 0px 10px 10px;
+          background-color: var(--BgPrimaryColor);
+          border-radius: 10px;
+        }
+      }
+
+      @include smMaxBreakPoint {
+        flex-direction: "column";
+        max-width: 600px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      @include mdMaxBreakPoint {
+        .insideContainer {
+          flex-direction: "column";
+
+          .wrap {
+            width: 100%;
+            flex-direction: "column";
+          }
+
+          .rightSidebar {
+            width: 0px;
+            display: none;
+          }
+        }
+      }
+
+      @include lgMaxBreakPoint {
+        .insideContainer {
+          flex-direction: "column";
+
+          .rightSidebar {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profileHeader {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  .navButton {
+    display: flex;
+    padding: 5px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+    border-radius: 100px;
+    background-color: var(--MobileNavButtonColor);
+
+    &:active {
+      background-color: var(--MobileNavButtonActiveColor);
+    }
+
+    &.trigger {
+      background-color: var(--BgPrimaryColor);
+    }
+  }
+
+  .navCenter {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+    .info {
+      display: flex;
+      flex-direction: row;
+
+      .avatar {
+        width: 45px;
+        height: 45px;
+        aspect-ratio: 1/1;
+      }
+
+      .rightContain {
+        display: flex;
+        width: 100%;
+        margin-left: 15px;
+        justify-content: center;
+        flex-direction: column;
+
+        .title {
+          height: fit-content;
+          width: 100%;
+          color: var(--TextPrimaryColor);
+          font-family: SVN-PoppinsSemiBold;
+          font-size: 16px;
+        }
+
+        .subtitle {
+          height: fit-content;
+          color: var(--TextSubColor);
+          line-height: 15px;
+          font-family: SVN-PoppinsRegular;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

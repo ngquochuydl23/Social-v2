@@ -1,0 +1,15 @@
+.likeDialog {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 300px;
+
+  .composer {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    flex: 1;
+    bottom: 0;
+    background-color: var(--BgPrimaryColor);
+  }
+}

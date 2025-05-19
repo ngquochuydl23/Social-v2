@@ -1,0 +1,84 @@
+@import '/styles/mixins';
+
+.chooseGender {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+
+  .titleField {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: SVN-PoppinsMedium;
+  }
+
+  .genderButtonGroup {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .errorText {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 2px;
+    padding: 0;
+    color: var(--ErrorColor);
+    font-family: SVN-PoppinsRegular;
+  }
+}
+
+.genderButton {
+  height: 40px;
+  margin-right: 10px;
+  width: fit-content;
+
+  @include smMaxBreakPoint {
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  &.isActive {
+    border: 2px solid var(--PrimaryColor);
+
+    .textButton {
+      font-size: 14px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--PrimaryColor);
+
+      &:hover {
+        color: var(--PrimaryColor);
+      }
+    }
+
+    &:hover {
+      border: 2px solid var(--PrimaryColor);
+    }
+  }
+
+  &.error {
+    border: 2px solid var(--ErrorColor);
+
+    .textButton {
+      font-size: 14px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+
+      &:hover {
+        color: var(--TextSubColor);
+      }
+    }
+
+    &:hover {
+      border: 2px solid var(--ErrorColor);
+    }
+  }
+
+  .textButton {
+    font-size: 14px;
+    font-family: SVN-PoppinsRegular;
+    color: var(--TextSubColor);
+  }
+}

@@ -1,0 +1,22 @@
+@import '/styles/mixins';
+
+.authLayout {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--BgSubColor);
+
+  .authContainer {
+    display: 'flex';
+    flex-direction: 'row';
+  }
+
+  @include smMaxBreakPoint {
+    background-color: var(--BgPrimaryColor);
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,114 @@
+@import '/styles/mixins';
+
+.secondForm {
+  background-color: var(--BgPrimaryColor);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 1px var(--Shadow);
+
+  @include smMaxBreakPoint {
+    box-shadow: none;
+  }
+
+  .formLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .formTitle {
+      width: 50%;
+      text-align: center;
+      font-family: SVN-PoppinsSemiBold;
+      font-size: 25px;
+    }
+
+    .formEmail {
+      margin-top: 25px;
+    }
+
+    .formPhone {
+      margin-top: 25px;
+    }
+
+    .formPickCountryCode {
+      width: 40%;
+      border-radius: 15px;
+
+      &.css-13cymwt-control {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        cursor: default;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        min-height: 38px;
+        outline: 0 !important;
+        position: relative;
+        -webkit-transition: all 100ms;
+        transition: all 100ms;
+        background-color: antiquewhite;
+        border-color: hsl(0, 0%, 80%);
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+      }
+    }
+
+    .formNextButton {
+      margin-top: 20px;
+
+      &:active {
+        background-color: rgba(12, 142, 255, 0.5);
+      }
+
+      &:disabled {
+        background-color: rgba(12, 142, 255, 0.5);
+      }
+    }
+
+    #flag {
+      border: none;
+
+      .selectBtn {
+        border: none;
+        border-radius: 15px;
+        height: 45px;
+        background-color: var(--BgSubColor);
+      }
+    }
+
+    .switchingButton {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      padding: 5px 10px;
+      align-self: flex-start;
+      justify-content: center;
+
+      p {
+        font-family: 'SVN-PoppinsMedium';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 10px;
+        color: var(--PrimaryColor);
+      }
+
+      &:hover {
+        background-color: rgba(12, 142, 255, 0.2);
+        border-radius: 4px;
+      }
+    }
+  }
+}

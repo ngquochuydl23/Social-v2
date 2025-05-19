@@ -1,0 +1,118 @@
+@import '/styles/mixins';
+
+.authTextField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .titleField {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: var(--TextPrimaryColor);
+    font-family: SVN-PoppinsMedium;
+  }
+
+  .suggestion {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 2px;
+    padding: 0;
+    color: var(--TextSubColor);
+    font-family: SVN-PoppinsRegular;
+  }
+
+  .fieldContain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 45px;
+    background-color: var(--AuthTextField);
+    border: 2px solid var(--AuthTextField);
+    border-radius: 15px;
+
+    .fieldInput {
+      display: flex;
+      background-color: var(--AuthTextField);
+      flex: 1;
+      height: 100%;
+      padding-left: 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-family: SVN-PoppinsRegular;
+      font-size: 0.938rem;
+      box-sizing: border-box;
+      padding-right: 15px;
+
+      @include smMaxBreakPoint {
+
+        margin-right: 10px;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px var(--AuthTextField) inset !important;
+      }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: var(--AuthTextFieldPlcHolder);
+      }
+
+      &:-ms-input-placeholder {
+        color: var(--AuthTextFieldPlcHolder);
+      }
+
+      &::-ms-input-placeholder {
+        color: var(--AuthTextFieldPlcHolder);
+      }
+
+      &.hasRightIcon {
+        padding-right: 45px;
+        margin-right: 0px;
+      }
+    }
+
+    &.onError {
+      outline: none !important;
+      border: 2px solid var(--ErrorColor);
+    }
+
+    .rightIcon {
+      height: 45px;
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      right: 0px;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 1/1;
+    }
+
+    &.focusing {
+      border-radius: 15px;
+      border: 2px solid var(--PrimaryColor);
+    }
+  }
+
+  .errorText {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 2px;
+    padding: 0;
+    color: var(--ErrorColor);
+    font-family: SVN-PoppinsRegular;
+  }
+}

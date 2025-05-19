@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  padding: 10px;
+  background-color: var(--BgPrimaryColor);
+  align-items: center;
+
+  .roomInfo {
+    display: flex;
+    flex: 1;
+    margin-left: 15px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      color: var(--TextPrimaryColor);
+      font-size: 16px;
+      font-family: SVN-PoppinsMedium;
+    }
+
+    .subtitle {
+      color: var(--TextSubColor);
+      font-size: 12.5px;
+      margin-top: 2px;
+      font-family: SVN-PoppinsRegular;
+    }
+  }
+
+  .headerBtn {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 300px;
+    border: none;
+
+    &:hover {
+      background-color: #f4f4f4;
+
+    }
+
+    [data-theme="dark"] &:hover {
+      background-color: #242526;
+    }
+  }
+}

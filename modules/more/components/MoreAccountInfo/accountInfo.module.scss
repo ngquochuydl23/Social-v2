@@ -1,0 +1,50 @@
+.accountProfile {
+  background-color: var(--BgPrimaryColor);
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    margin: 0 15px 0 15px;
+  }
+}
+
+.overwriteAvatar {
+  width: 70px;
+  height: 70px;
+  aspect-ratio: 1/1;
+}
+
+.wrapperContext {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+
+.fullName {
+  font-family: SVN-PoppinsSemiBold;
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  color: var(--TextPrimaryColor);
+}
+
+.overrideLinkStyle {
+  text-decoration: none;
+}
+
+.userName {
+  font-family: SVN-PoppinsRegular;
+  font-size: 14px;
+  margin-top: 5px;
+  color: var(--TextSubColor);
+}
+
+.accountInteraction {
+  background-color: var(--BgSubColor);
+  margin: 10px 15px 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+}

@@ -1,0 +1,53 @@
+.feedMedias {
+  position: relative;
+  display: flex;
+  flex: 1;
+
+  .onFeedMedias {
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px;
+    position: absolute;
+  }
+
+  .addMediasButton {
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 35px;
+    border-radius: 7.5px;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+
+    .text {
+      font-family: SVN-PoppinsMedium;
+      font-size: 12.5px;
+      color: #000;
+    }
+
+    &:hover {
+      background-color: rgba($color: #FFFFFF, $alpha: 1.0);
+    }
+  }
+
+  .editButton {
+    width: fit-content;
+    height: 35px;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-radius: 7.5px;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+
+    .text {
+
+      font-family: SVN-PoppinsMedium;
+      font-size: 12.5px;
+      color: #000;
+    }
+
+    &:hover {
+      background-color: rgba($color: #FFFFFF, $alpha: 1.0);
+    }
+  }
+}

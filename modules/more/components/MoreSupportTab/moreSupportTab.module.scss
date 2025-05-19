@@ -1,0 +1,16 @@
+.moreSupportTab{
+    list-style-type: none;
+    padding:10px 0px 10px 0px;
+    background-color: var(--BgPrimaryColor);
+}
+
+.container{
+    margin:0px 20px 0px 20px;
+    background-color: var(--SideBarHoverAndAcitve);
+    border-radius: 15px;
+    .line {
+        height: 1px;
+        margin: 0 7px 0 7px;
+        background-color: var(--BorderColor);
+      }
+}

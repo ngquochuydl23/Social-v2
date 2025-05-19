@@ -1,0 +1,20 @@
+.dropDownContainer {
+  position: absolute;
+  display: inline-block;
+  background-color: var(--BgPrimaryColor);
+  right: 0px;
+  top: 52px;
+  pointer-events: auto;
+  z-index: 1;
+  border: 1px solid var(--DropDownShadow);
+  backdrop-filter: blur(2px);
+  border-radius: 0px 0px 20px 20px;
+
+  .dropDownMenu {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+  }
+}

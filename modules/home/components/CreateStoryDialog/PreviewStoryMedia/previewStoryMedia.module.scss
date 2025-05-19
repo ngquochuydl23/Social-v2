@@ -1,0 +1,105 @@
+.previewMedia {
+  display: flex;
+  aspect-ratio: 9/16;
+  width: 250px;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+
+  .forCanvas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    .blurMedia {
+      flex: 1;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      aspect-ratio: 9/16;
+      box-shadow: none;
+      object-fit: cover;
+      backdrop-filter: blur(10px);
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+      height: 100%;
+      width: 100%;
+      box-shadow: none;
+      overflow: hidden;
+
+      &::after {
+        filter: blur(0px);
+      }
+    }
+
+    .videoContainer {
+      position: absolute;
+      overflow: hidden;
+      // height: fit-content;
+
+      video {
+        // object-fit: cover;
+      }
+    }
+
+    .mediaImage {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: none;
+      object-fit: contain;
+      width: 100%;
+      box-shadow: none;
+      overflow: hidden;
+      position: absolute;
+    }
+
+  }
+
+
+  .controller {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    .play {
+      position: absolute;
+      height: 50px;
+      margin: auto;
+      width: 50px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .menu {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: fit-content;
+      padding: 10px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+      justify-content: space-around;
+
+      .icFrame {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}

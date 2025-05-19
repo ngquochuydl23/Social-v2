@@ -1,0 +1,16 @@
+@import '/styles/mixins';
+
+.homeSideBar {
+  width: 100%;
+  padding: 10px 0px;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--BgPrimaryColor);
+
+  @include lgMaxBreakPoint  {
+    width: fit-content
+  }
+}

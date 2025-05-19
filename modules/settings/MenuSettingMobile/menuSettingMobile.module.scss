@@ -1,0 +1,60 @@
+.menuSettings {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .title {
+    margin-top: 0px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: SVN-PoppinsSemiBold;
+    color: var(--TextColorPrimary);
+  }
+
+  .sideItem {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+
+    .sideItemWrap {
+      display: flex;
+      flex: 1;
+      margin: 0px 10px;
+      flex-direction: row;
+      align-items: center;
+
+      .text {
+        margin-left: 15px;
+        font-family: SVN-PoppinsMedium;
+        font-size: 13.5px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        color: var(--TextSubColor);
+      }
+
+      .arrow {
+        svg {
+          path {
+
+          }
+        }
+      }
+    }
+
+    &.active {
+      border-radius: 10px;
+      background-color: rgba($color: #0C8EFF, $alpha: 0.2);
+
+      .sideItemWrap {
+        .text {
+          color: var(--PrimaryColor);
+        }
+      }
+    }
+  }
+}

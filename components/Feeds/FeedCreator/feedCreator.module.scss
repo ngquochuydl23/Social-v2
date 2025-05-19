@@ -1,0 +1,45 @@
+.feedCreator {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--BgPrimaryColor);
+  position: relative;
+
+  .center {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    padding-left: 10px;
+    flex-direction: column;
+
+    .fullNameAndTitle {
+      font-family: SVN-PoppinsRegular;
+      font-size: 14px;
+      margin-right: 10px;
+      color: var(--TextSubColor);
+
+      a {
+        text-decoration: none;
+        color: var(--TextPrimaryColor);
+
+        span {
+          color: var(--TextPrimaryColor);
+          font-family: SVN-PoppinsSemiBold;
+        }
+
+        &:active {
+          color: var(--TextPrimaryColor);
+        }
+      }
+    }
+
+    .privacyAndTime {
+      margin-top: 2px;
+
+      .time {
+        font-family: SVN-PoppinsRegular;
+        font-size: 13px;
+        color: var(--TextSubColor);
+      }
+    }
+  }
+}

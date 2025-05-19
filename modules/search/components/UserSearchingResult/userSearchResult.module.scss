@@ -1,0 +1,63 @@
+.userSearchResult {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 10px;
+  align-items: flex-start;
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .rightComponent {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    margin-left: 15px;
+    flex-direction: column;
+
+    .fullName {
+      font-size: 15px;
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsSemiBold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .userName {
+      font-size: 13px;
+      margin-top: 2.5px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+    }
+
+    .follower {
+      margin-top: 5px;
+      font-size: 13px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+
+      span {
+        font-family: SVN-PoppinsMedium;
+        font-size: 13px;
+        color: var(--TextPrimaryColor);
+      }
+    }
+  }
+
+  .followButton {
+    display: flex;
+    align-self: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 7.5px;
+
+    .textButton {
+      font-size: 12px;
+    }
+  }
+}

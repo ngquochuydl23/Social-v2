@@ -1,0 +1,29 @@
+.rightSideBar {
+  overflow: auto;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--BgPrimaryColor);
+
+  @mixin lgMinBreakPoint {
+    display: none;
+  }
+
+  .requests {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .requestTitle {
+      margin-bottom: 10px;
+      color: var(--TextPrimaryColor);
+
+      span {
+        font-family: SVN-PoppinsSemiBold;
+        font-size: 16px;
+      }
+    }
+  }
+}

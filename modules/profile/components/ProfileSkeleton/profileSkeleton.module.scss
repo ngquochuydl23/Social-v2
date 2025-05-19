@@ -1,0 +1,86 @@
+@import "/styles/mixins";
+
+.profileSkeleton {
+  display: flex;
+  padding-bottom: 15px;
+  width: 100%;
+  flex-direction: column;
+
+  .coverContain {
+    aspect-ratio: 3/1;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--SkeletonColor);
+  }
+
+  .avatarAndFullName {
+    margin-top: -60px;
+    padding-left: 30px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .avatarContain {
+      background-color: var(--BgPrimaryColor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      border-radius: 200px;
+
+      .skeleton {
+        width: 190px;
+        height: 190px;
+        border-radius: 200px;
+        aspect-ratio: 1/1;
+        background-color: var(--SkeletonColor);
+      }
+    }
+
+    .rightInfo {
+      margin-left: 20px;
+      margin-top: 80px;
+      padding-right: 10px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      flex: 1;
+      overflow: hidden;
+
+      .fullname {
+        background-color: var(--SkeletonColor);
+        height: 30px;
+        width: 250px;
+        border-radius: 20px;
+      }
+
+      .userName {
+        background-color: var(--SkeletonColor);
+        height: 20px;
+        width: 175px;
+        margin-top: 10px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .tabs {
+    padding-left: 30px;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+
+    .tab {
+      background-color: var(--SkeletonColor);
+      height: 20px;
+      width: 80px;
+      margin-right: 15px;
+      border-radius: 20px;
+    }
+  }
+}

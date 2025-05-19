@@ -1,0 +1,5 @@
+<svg width="88" height="60" viewBox="0 0 108 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.8 8.4H81V37.8H91.8V8.4C91.8 3.77016 86.9527 0 81 0H10.8C4.84102 0 0 3.77016 0 8.4V58.8C0 63.4348 4.84102 67.2 10.8 67.2H54V58.8H10.8V8.4Z" fill="var(--IconColor)" fill-opacity="0.4"/>
+<path d="M32.4002 33.5992L16.2002 50.3992H75.6002L54.0002 25.1992L37.8002 41.9992L32.4002 33.5992Z" fill="var(--IconColor)" fill-opacity="0.4"/>
+<path d="M91.7998 46.1992H80.9998V58.7992H64.7998V67.1992H80.9998V79.7992H91.7998V67.1992H108V58.7992H91.7998V46.1992Z" fill="var(--IconColor)" fill-opacity="0.4"/>
+</svg>

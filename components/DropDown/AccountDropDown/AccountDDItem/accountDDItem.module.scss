@@ -1,0 +1,45 @@
+.accountDDItem {
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  margin: 2px;
+  padding: 5px;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--AccountDDItemHover);
+    border-radius: 15px;
+
+    .insideContain {
+      .iconFrameDDItem {
+        height: 35px;
+        width: 35px;
+        background-color: var(--IconFrameHover);
+      }
+    }
+  }
+
+  .insideContain {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .iconFrameDDItem {
+      height: 35px;
+      width: 35px;
+      background-color: var(--IconFrameColor);
+      border-radius: 2000px;
+    }
+
+    .text {
+      font-family: SVN-PoppinsRegular;
+      font-style: normal;
+      color: var(--TextPrimaryColor);
+      font-size: 0.9em;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  }
+}

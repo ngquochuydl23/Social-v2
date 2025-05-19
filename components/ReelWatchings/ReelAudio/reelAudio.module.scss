@@ -1,0 +1,77 @@
+@import '/styles/mixins';
+
+.reelAudio {
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--BgSubColor);
+  padding-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  width: calc(((90vh) * 9.0 / 16.0) + 55px);
+
+  &.mobileAudio {
+    background-color: rgb(255, 255, 255, 0.5);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+
+    .song {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: ('560px')) {
+    width: calc(100% - 20px);
+  }
+
+  @media (min-width: '561px') and (max-width: '599px') {
+    width: calc(((100vh) * 9.0 / 16.0) + 55px);
+  }
+
+  .lottieAnimation {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    padding-top: 7.5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .song {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    flex-grow: 1;
+    flex: 1;
+    color: var(--TextPrimaryColor);
+    font-family: SVN-PoppinsRegular;
+    text-overflow: ellipsis;
+    max-lines: 1;
+  }
+
+  .artist {
+    height: 40px;
+    aspect-ratio: 1/1;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 3px;
+    border: 3px solid var(--BgPrimaryColor);
+    border-radius: 300px;
+
+    .avatar {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

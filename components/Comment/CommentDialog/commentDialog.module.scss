@@ -1,0 +1,14 @@
+.commentDialog {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  .composer {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    flex: 1;
+    bottom: 0;
+    background-color: var(--BgPrimaryColor);
+  }
+}

@@ -1,0 +1,70 @@
+.reelCreator {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+
+  .center {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    padding: 0px 10px;
+    justify-content: center;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      .fullNameOrUserName {
+        font-family: SVN-PoppinsSemiBold;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      &:active {
+        color: #fff;
+      }
+    }
+
+    .privacyAndTime {
+      .time {
+        font-family: SVN-PoppinsRegular;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+
+  &.isDesktop {
+    background-color: var(--BgPrimaryColor);
+
+    .center {
+      a {
+        color: var(--TextPrimaryColor);
+
+        .fullNameOrUserName {
+          color: var(--TextPrimaryColor);
+        }
+
+        &:active {
+          color: var(--TextPrimaryColor);
+        }
+      }
+
+      .privacyAndTime {
+        .time {
+          color: var(--TextSubColor);
+        }
+      }
+    }
+  }
+
+  .moreButton {
+    height: 30px;
+    width: 30px;
+    background-color: antiquewhite;
+  }
+}

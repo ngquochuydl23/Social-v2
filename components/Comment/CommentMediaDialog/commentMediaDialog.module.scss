@@ -1,0 +1,21 @@
+.commentMediaDialog {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+
+  .mediaLayout {
+    object-fit: contain;
+    display: flex;
+    background-color: black;
+    flex: 2;
+  }
+
+  .tabRightSideFeedInfo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--BgPrimaryColor);
+  }
+}

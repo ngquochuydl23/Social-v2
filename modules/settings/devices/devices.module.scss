@@ -1,0 +1,53 @@
+.section {
+  margin-top: 20px;
+
+  .title {
+    font-size: 14px;
+    font-family: SVN-PoppinsMedium;
+    line-height: 15px;
+    color: var(--TextPrimaryColor);
+    margin-bottom: 20px;
+  }
+}
+
+.device {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+
+  .icFrame {
+    aspect-ratio: 1;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--BgSubColor);
+  }
+
+  .info {
+    margin-left: 10px;
+
+    .deviceName {
+      font-size: 14px;
+      font-family: SVN-PoppinsMedium;
+      line-height: 15px;
+      color: var(--TextPrimaryColor);
+    }
+
+    .appVerion {
+      font-size: 12px;
+      margin-top: 5px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+    }
+
+    .location {
+      font-size: 12px;
+      margin-top: 2.5px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+    }
+  }
+}

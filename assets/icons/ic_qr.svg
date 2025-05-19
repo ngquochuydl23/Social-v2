@@ -1,0 +1,28 @@
+<svg
+  width="20"
+  height="20"
+  viewBox="0 0 19 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<path
+    d="M19.0027 19.0027H13.7581V17.0752H17.0753V13.7581H19.0027V19.0027Z"
+    fill="var(--OnIconFrameColor)"
+  />
+<path
+    d="M6.21945 19.0027H0.974854V13.7581H2.90234V17.0752H6.21945V19.0027Z"
+    fill="var(--OnIconFrameColor)"
+  />
+<path
+    d="M2.90234 6.21945H0.974854V0.974854H6.21945V2.90234H2.90234V6.21945Z"
+    fill="var(--OnIconFrameColor)"
+  />
+<path
+    d="M19.0027 6.21945H17.0753V2.90234H13.7581V0.974854H19.0027V6.21945Z"
+    fill="var(--OnIconFrameColor)"
+  />
+<path
+    d="M19.8677 9.02515H0.109894V10.9526H19.8677V9.02515Z"
+    fill="var(--OnIconFrameColor)"
+  />
+</svg>

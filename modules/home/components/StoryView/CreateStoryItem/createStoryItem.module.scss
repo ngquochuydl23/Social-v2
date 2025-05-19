@@ -1,0 +1,89 @@
+@import '/styles/mixins';
+
+.createStoryItem {
+  width: 100px;
+  height: 180px;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  background-color: var(--BgPrimaryColor);
+  box-shadow: 0px 0px 2px var(--Shadow);
+  border-radius: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+  }
+
+  .createBody {
+    display: flex;
+    flex: 1;
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--CreateStoryBodyColor);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .createButton {
+      height: 50px;
+      align-items: center;
+      width: 50px;
+      border-radius: 200px;
+      margin-top: -30px;
+      background-color: var(--BgPrimaryColor);
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border: 3px solid var(--CreateStoryBodyColor);
+
+      .onButton {
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 200px;
+        height: 100%;
+        width: 100%;
+
+        span {
+          color: #FFF;
+          display: flex;
+          white-space: nowrap;
+          font-size: 30px;
+
+          @include mdMaxBreakPoint {
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+
+    .createStoryTitle {
+      font-size: 14px;
+      margin-top: 2px;
+      text-align: center;
+      line-height: 18px;
+      padding-left: 10px;
+      font-family: SVN-PoppinsSemiBold;
+      padding-right: 10px;
+      color: var(--TextPrimaryColor);
+    }
+  }
+
+  &:hover {
+    .createBody {
+      background-color: transparent;
+    }
+
+    box-shadow: none;
+  }
+}

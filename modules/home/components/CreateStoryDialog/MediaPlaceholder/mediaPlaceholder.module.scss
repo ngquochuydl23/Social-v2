@@ -1,0 +1,64 @@
+.uploadFrame {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 600px;
+    margin: 20px;
+    background-color: var(--PlaceHolder);
+    border: 1px dashed #696969;
+
+    .description {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: SVN-PoppinsRegular;
+        font-size: 14px;
+        text-align: center;
+        color: var(--TextSubColor);
+        margin-top: 20px;
+    }
+
+    .uploadFromPcButton {
+        display: flex;
+        width: 250px;
+        border-radius: 7.5px;
+        height: 30px;
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    .orText {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        .stroke {
+            height: 2px;
+            width: 26px;
+            background-color: var(--StrokeLine);
+        }
+
+        p {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 15px;
+            color: var(--TextSubColor);
+            font-family: SVN-PoppinsMedium;
+        }
+    }
+
+    .createStoryText {
+        display: flex;
+        width: 250px;
+        border-radius: 7.5px;
+        height: 30px;
+        background-color: var(--PlaceHolder);
+        margin-top: 30px;
+        font-size: 12px;
+    }
+}

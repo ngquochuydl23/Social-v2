@@ -1,0 +1,29 @@
+@import '/styles/mixins';
+
+.createFeed {
+  display: flex;
+  margin-top: 10px;
+  background-color: var(--BgPrimaryColor);
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0px 1px 1px var(--Shadow);
+  align-items: center;
+
+  .status {
+    display: flex;
+    margin-left: 15px;
+    flex: 1;
+    p {
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsMedium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  @include smMaxBreakPoint {
+    border-radius: 0px;
+  }
+}

@@ -1,0 +1,49 @@
+.rightDrawer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 400px !important;
+
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .avatar {
+      border: #d3d3d3 solid 5px;
+      margin-top: 20px;
+      display: flex;
+      height: 120px;
+      width: 120px;
+    }
+
+    .fullName {
+      margin-top: 20px;
+      font-size: 18px;
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsMedium;
+    }
+
+    .userName {
+      margin-top: 5px;
+      font-size: 14px;
+      color: var(--TextSubColor);
+      font-family: SVN-PoppinsRegular;
+    }
+
+    .menuBtns {}
+  }
+
+  .menuInfoChat {
+    display: flex;
+    padding: 10px;
+
+    .title {
+      color: var(--TextPrimaryColor);
+      padding: 0;
+      margin-block-end: 0;
+      margin-left: 20px;
+    }
+  }
+}

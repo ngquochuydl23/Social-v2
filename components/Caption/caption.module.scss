@@ -1,0 +1,28 @@
+.caption {
+  padding: 0px 10px 10px 10px;
+
+  .captionContent {
+    display: block;
+    font-size: 14px;
+    font-family: SVN-PoppinsRegular;
+    color: var(--TextPrimaryColor);
+    line-height: 24px;
+    word-wrap: break-word;
+    line-break: auto;
+    white-space: pre-wrap;
+
+    &.limit {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .expandCollapseButton {
+    margin-top: 5px;
+    font-family: SVN-PoppinsRegular;
+    color: var(--PrimaryColor);
+    font-size: 13px;
+  }
+}

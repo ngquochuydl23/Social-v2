@@ -1,0 +1,42 @@
+.uploadDDItem {
+  display: flex;
+  width: 145px;
+  flex-direction: row;
+  margin: 2px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--AccountDDItemHover);
+    border-radius: 15px;
+
+    .insideContain {
+      .iconFrameDDItem {
+        background-color: var(--IconFrameHover);
+      }
+    }
+  }
+
+  .insideContain {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .iconFrameDDItem {
+      width: 40px;
+      height: 40px;
+      background-color: var(--IconFrameColor);
+      border-radius: 2000px;
+    }
+
+    .text {
+      font-family: SVN-PoppinsRegular;
+      font-style: normal;
+      font-weight: 400;
+      color: var(--TextPrimaryColor);
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+  }
+}

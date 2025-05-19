@@ -1,0 +1,107 @@
+@import '/styles/mixins';
+
+.reelItem {
+  display: flex;
+  // height: 100vh;
+  margin-bottom: 10px;
+  background-color: var(--BgPrimaryColor);
+  border-radius: 15px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .reelItemWrap {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+
+    .mediaContent {
+      display: flex;
+      height: calc(90vh);
+      flex-direction: column;
+      //      width: calc((100vh) * 9.0 / 16.0);
+      width: calc((90vh) * 9.0 / 16.0);
+    }
+
+    .reelInteraction {
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      height: calc(90vh);
+    }
+
+    @include smMaxBreakPoint {
+      .reelInteraction {
+        flex: 0;
+        width: fit-content;
+        margin-right: 10px;
+      }
+
+      .mediaContent {
+        height: calc(100vh);
+        width: calc((100vh) * 9.0 / 16.0);
+      }
+    }
+  }
+}
+
+.itemButton {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .textSubCount {
+    color: var(--TextPrimaryColor);
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.02%;
+    font-family: SVN-PoppinsMedium;
+  }
+}
+
+.mobileReelItem {
+  flex: 1;
+  max-height: calc(100vh - 115px);
+  display: flex;
+  background-color: var(--BgPrimaryColor);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  .reelContent {
+    display: flex;
+    flex: 1;
+    background-color: black;
+    overflow: hidden;
+    justify-content: center;
+
+
+    .mobileCaption {
+      color: #fff;
+    }
+
+    .onReelContent {
+      z-index: 120;
+      box-sizing: border-box;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      background-color: rgb(0, 0, 0, 0.15);
+    }
+  }
+}

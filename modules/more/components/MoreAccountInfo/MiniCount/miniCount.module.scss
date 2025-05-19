@@ -1,0 +1,27 @@
+.miniCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  flex: 1;
+}
+.count {
+  font-family: SVN-PoppinsSemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--TextPrimaryColor);
+}
+
+.text {
+  font-family: SVN-PoppinsMedium;
+  font-size: 14px;
+  margin-top: 5px;
+  letter-spacing: -0.02em;
+  color: var(--TextSubColor);
+}

@@ -1,0 +1,196 @@
+@import "/styles/mixins";
+
+.homeLayout {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: var(--BgPrimaryColor);
+
+  .container {
+    background-color: var(--BgPrimaryColor);
+
+    .wrapContain {
+      display: flex;
+      z-index: 1200;
+      flex: 1;
+      flex-grow: 100%;
+      position: sticky;
+      justify-content: center;
+      flex-direction: row;
+
+      .leftComponentWrap {
+        display: flex;
+        flex: 1;
+        top: 60px;
+        flex-grow: 100%;
+        height: calc(100vh - 60px);
+        position: sticky;
+        background-color: var(--BgPrimaryColor);
+      }
+
+      .wrapChildren {
+        padding: 10px;
+        display: flex;
+        width: 500px;
+        background-color: var(--BgSubColor);
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .rightComponentWrap {
+        display: flex;
+        flex: 1;
+        top: 60px;
+        flex-grow: 100%;
+        position: sticky;
+        height: calc(100vh - 60px);
+        background-color: var(--BgPrimaryColor);
+      }
+
+      @include lgMaxBreakPoint {
+        .leftComponentWrap {
+          flex: 0;
+        }
+
+        .wrapChildren {
+          width: 600px;
+        }
+
+        .rightComponentWrap {}
+      }
+
+      @media (max-width: 950px) {
+        .wrapChildren {
+          width: 480px;
+        }
+      }
+
+      @include mdMaxBreakPoint {
+        .rightComponentWrap {
+          display: none;
+        }
+
+        .wrapChildren {
+          width: 100%;
+        }
+      }
+    }
+
+    @include mdMaxBreakPoint {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+.homeMobileLayout {
+  background-color: var(--BgPrimaryColor);
+
+  .homeWrap {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    min-height: calc(100vh - 60px);
+    background-color: var(--BgSubColor);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+
+    &.showMobileHeader {
+      padding-top: 60px;
+    }
+  }
+}
+
+.mobileHeader {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--BgPrimaryColor);
+
+  .badgeItem {
+    margin-right: 15px;
+
+    span {
+      background-color: #f91c3d;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
+      font-family: SVN-PoppinsMedium;
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex: 1;
+    padding: 0px 10px;
+  }
+
+  .icFrame {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.labelBotNavItem {
+  color: var(--MobileLabelBotNavColor);
+  font-family: SVN-PoppinsRegular;
+
+  &.isActive {
+    color: var(--PrimaryColor);
+  }
+}
+
+.homeTabletLayout {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: var(--BgPrimaryColor);
+
+  .container {
+    background-color: var(--BgPrimaryColor);
+
+    .wrapContain {
+      display: flex;
+      z-index: 1200;
+      flex: 1;
+      flex-grow: 100%;
+      position: sticky;
+      justify-content: center;
+      flex-direction: row;
+
+      .wrapChildren {
+        padding: 10px;
+        display: flex;
+        flex: 1.2;
+        background-color: var(--BgSubColor);
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .rightComponentWrap {
+        display: flex;
+        flex: 1;
+        top: 60px;
+        flex-grow: 100%;
+        overflow: hidden;
+        position: sticky;
+        height: calc(100vh - 60px);
+        background-color: var(--BgPrimaryColor);
+      }
+    }
+
+    @include mdMaxBreakPoint {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}

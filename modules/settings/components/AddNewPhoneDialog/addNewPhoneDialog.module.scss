@@ -1,0 +1,36 @@
+.addNewPhone {
+  background-color: var(--BgPrimaryColor);
+  border-radius: 20px;
+
+  .body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    .title {
+      font-family: SVN-PoppinsRegular;
+      font-size: 14px;
+      color: var(--TextPrimaryColor);
+    }
+
+    .formLayout {
+
+
+
+      .formPhone {
+        margin-top: 30px;
+      }
+
+      .formBtn {
+        margin-top: 40px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 10px;
+      }
+
+      .textButton {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.followRequest {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  .avatar {
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1/1;
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+    .title {
+      width: 100%;
+      font-size: 14px;
+      font-family: SVN-PoppinsRegular;
+      color: var(--TextSubColor);
+
+      span {
+        color: var(--TextPrimaryColor);
+        font-size: 15px;
+        font-family: SVN-PoppinsSemiBold;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 10px;
+      flex-direction: row;
+
+      .acceptButton {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #fff;
+        font-family: SVN-PoppinsMedium;
+        font-size: 13px;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+
+        &:hover {
+          background-color: rgba(12, 142, 255, 0.5);
+        }
+      }
+
+      .declineButton {
+        margin-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: var(--TextSubColor);
+        font-size: 13px;
+        font-family: SVN-PoppinsMedium;
+        border-radius: 10px;
+        background-color: var(--BgPrimaryColor);
+        border: 1px solid var(--BorderColor);
+
+        &:hover {
+          background-color: var(--FollowRequestHoverColor);
+          border: 1px solid var(--BorderColor);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    border-radius: 10px;
+    border-radius: 15px;
+  }
+}

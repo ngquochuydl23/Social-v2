@@ -1,0 +1,77 @@
+.feedClassic {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+
+  &.onePortrait {
+    height: 100%;
+    overflow: hidden;
+    max-height: calc(100vh - 60px);
+  }
+
+  &.oneLandscape {
+    min-height: 200px;
+  }
+
+  &.oneSquare {
+    aspect-ratio: 1;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &.twoPortrait {
+    aspect-ratio: 1;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+
+    .item {
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.feedMediaClassic {
+  display: flex;
+  min-height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: flex;
+    flex: 1;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .onMedia {
+    position: absolute;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+
+    &.isHover {
+      background-color: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .controlImage {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      height: fit-content;
+    }
+  }
+}

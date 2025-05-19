@@ -1,0 +1,78 @@
+.likeItem {
+    // display: flex;
+
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .item {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .infoCreator {
+                display: flex;
+                text-decoration: none;
+                flex-direction: row;
+                flex: 1;
+
+                .name {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-left: 15px;
+
+                    .fullName {
+                        color: var(--TextPrimaryColor);
+                        font-size: 15px;
+                        font-family: SVN-PoppinsMedium;
+                    }
+
+                    .username {
+                        color: var(--TextSubColor);
+                        font-size: 13px;
+                        font-family: SVN-PoppinsRegular;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.buttonWrapper {
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+
+    &.noFollow {
+        background-color: var(--PrimaryColor);
+
+        .text {
+            color: #FFF;
+            font-size: 12px;
+            font-family: SVN-PoppinsMedium;
+        }
+
+        &:hover {
+            background-color: rgba(12, 142, 255, 0.5);
+        }
+    }
+
+    &.followed {
+        background-color: var(--BgPrimaryColor);
+
+        .text {
+
+            color: var(--TextSubColor);
+            font-size: 12px;
+            font-family: SVN-PoppinsMedium;
+        }
+
+        &:hover {
+            background-color: var(--FollowRequestHoverColor);
+        }
+    }
+}

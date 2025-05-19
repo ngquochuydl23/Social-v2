@@ -1,0 +1,67 @@
+.createUpdateAvatar {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+  position: relative;
+
+  .avatar {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 200px;
+    overflow: hidden;
+  }
+
+  .right {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+
+    h4 {
+      font-family: SVN-PoppinsSemiBold;
+      color: var(--TextPrimaryColor);
+      font-size: 14px;
+    }
+
+    p {
+      font-family: SVN-PoppinsRegular;
+      font-size: 12.5px;
+      margin-top: 5px;
+      color: var(--TextSubColor);
+    }
+
+    .buttonGroup {
+      display: flex;
+      margin-top: 20px;
+
+      .changeAvatarButton {
+        height: 30px;
+        padding: 0 20px;
+        width: fit-content;
+        background-color: var(--BgSubColor);
+        border-radius: 5px;
+        font-size: 12px;
+        color: var(--TextSubColor);
+        font-family: SVN-PoppinsMedium;
+      }
+
+      .removeAvatarButton {
+        margin-left: 10px;
+        height: 30px;
+        padding: 0px 20px;
+        width: fit-content;
+        background-color: rgba(249, 28, 61, 0.2);
+        border-radius: 5px;
+        font-size: 12px;
+        color: #F91C3D;
+        font-family: SVN-PoppinsMedium;
+      }
+    }
+  }
+
+  input {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+.likeItem {
+  display: flex;
+  flex: 1;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.avatar {
+  margin: 0 15px;
+  height: 50px;
+  width: 50px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    font-family: SVN-PoppinsMedium;
+    font-size: 14px;
+    color: var(--TextPrimaryColor);
+
+    span {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: SVN-PoppinsRegular;
+      font-size: 14px;
+      color: var(--TextSubColor);
+    }
+  }
+
+  .description {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    line-break: auto;
+    white-space: pre-wrap;
+    font-weight: 100;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 22px;
+    font-family: SVN-PoppinsRegular;
+    font-size: 13px;
+    color: var(--TextSubColor);
+  }
+}
+
+.iconDelete {
+  margin: 0 14px;
+  cursor: pointer;
+  color: red;
+}

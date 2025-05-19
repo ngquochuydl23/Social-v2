@@ -1,0 +1,34 @@
+.mobileAppBar {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--BgPrimaryColor);
+
+  .navButton {
+    display: flex;
+    padding: 5px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+
+    &:active {
+      background-color: var(--MobileNavButtonActiveColor);
+    }
+  }
+
+  .navCenter {
+    display: flex;
+    flex: 1;
+
+    .label {
+      font-size: 20px;
+      color: var(--TextPrimaryColor);
+      font-family: SVN-PoppinsSemiBold;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.body {
+
+
+  .previewLayout {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .loadingMedia {
+      color: #fff;
+      position: absolute;
+      z-index: 1000;
+    }
+
+    .videoNameAndChange {
+      height: 37.5px;
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      background-color: var(--BgPrimaryColor);
+      border: 1px solid var(--BorderColor);
+      position: relative;
+      justify-content: space-between;
+
+      &:focus,
+      &::cue-region &::cue {
+        border: 2px solid var(--BorderColor);
+      }
+
+      svg {
+        margin-left: 15px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      p {
+        margin-left: 10px;
+        font-size: 10px;
+        color: var(--TextSubColor);
+        font-family: SVN-PoppinsMedium;
+      }
+
+      span {
+        margin-right: 10px;
+        font-size: 11px;
+        color: var(--PrimaryColor);
+        font-family: SVN-PoppinsSemiBold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+.panelControl {
+  display: flex;
+  flex: 1;
+}

@@ -1,0 +1,30 @@
+.facebookButton {
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--BgPrimaryColor);
+  border: 2px solid var(--BorderColor);
+  position: relative;
+
+  &:focus,
+  &::cue-region
+  &::cue {
+    border: 2px solid var(--BorderColor);
+  }
+
+  svg {
+    margin-left: 15px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  p {
+    margin: auto;
+    font-size: 14px;
+    color: var(--TextSubColor);
+    font-family: SVN-PoppinsMedium;
+  }
+}
