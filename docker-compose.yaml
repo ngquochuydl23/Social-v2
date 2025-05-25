@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  social-v2-ui:
+    build:
+      context: ./ui
+    restart: "always"
+    ports:
+      - 3000:3000
+
+  social-v2-api:
+    build:
+      context: ./ui
+    restart: "always"
+    ports:
+      - 3000:3000

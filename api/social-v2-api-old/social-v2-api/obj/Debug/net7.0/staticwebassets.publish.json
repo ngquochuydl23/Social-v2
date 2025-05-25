@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PGGoNAK5juqnv4cb5QWXgVfC0LZ6lzNNjxIui73EhtQ=",
+  "Source": "social-v2-api",
+  "BasePath": "_content/social-v2-api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
